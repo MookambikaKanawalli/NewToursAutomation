@@ -82,6 +82,7 @@
     <Compile Include="Framework\Base.cs" />
     <Compile Include="Framework\BasePage.cs" />
     <Compile Include="Framework\BaseTest.cs" />
+    <Compile Include="Framework\DriverContext.cs" />
     <Compile Include="Framework\Logger.cs" />
     <Compile Include="Framework\ReadConfigurationFile.cs" />
     <Compile Include="Pages\HomePage.cs" />

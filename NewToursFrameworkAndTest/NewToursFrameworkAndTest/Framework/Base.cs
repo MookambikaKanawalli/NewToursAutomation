@@ -9,17 +9,6 @@ namespace NewToursFrameworkAndTest.Framework
 {
     public static class Base
     {
-        private static IWebDriver _driver;
-        public static IWebDriver Driver
-        {
-            get
-            {
-                return _driver;
-            }
-            set
-            {
-                _driver = value;
-            }
-        }
+        
     }
 }

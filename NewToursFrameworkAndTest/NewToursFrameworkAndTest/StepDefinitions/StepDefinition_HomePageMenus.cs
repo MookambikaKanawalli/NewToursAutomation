@@ -16,9 +16,9 @@ namespace NewToursFrameworkAndTest.StepDefinitions
         [Given(@"I am in home page of test application")]
         public void GivenIAmInHomePageOfTestApplication()
         {
-            Base.Driver = new ChromeDriver();
-            Base.Driver.Manage().Window.Maximize();
-            Base.Driver.Navigate().GoToUrl("http://newtours.demoaut.com/mercurywelcome.php");
+            DriverContext.Driver = new ChromeDriver();
+            DriverContext.Driver.Manage().Window.Maximize();
+            DriverContext.Driver.Navigate().GoToUrl("http://newtours.demoaut.com/mercurywelcome.php");
             logger.Info("Opened the test application url");
             Thread.Sleep(2000);
         }
@@ -34,10 +34,10 @@ namespace NewToursFrameworkAndTest.StepDefinitions
         [Then(@"it should open Registration page")]
         public void ThenItShouldOpenRegistrationPage()
         {
-            Base.Driver.FindElement(By.Name("firstName"));
+            DriverContext.Driver.FindElement(By.Name("firstName"));
             logger.Info("Verified the existance of First name text box");
             Thread.Sleep(2000);
-            Base.Driver.Quit();
+            DriverContext.Driver.Quit();
             logger.Info("Closed the application");
         }
     }
