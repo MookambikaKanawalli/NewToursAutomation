@@ -13,6 +13,5 @@ namespace NewToursFrameworkAndTest.Framework
         {
             PageFactory.InitElements(Base.Driver, this);
         }
-
     }
 }
