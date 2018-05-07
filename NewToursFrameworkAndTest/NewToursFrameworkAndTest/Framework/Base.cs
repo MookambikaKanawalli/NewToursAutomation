@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace NewToursFrameworkAndTest.Framework
 {
-    public static class Base
+    public class Base
     {
-        
+        public BasePage CurrentPage { get; set; }
     }
 }

@@ -52,6 +52,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -82,13 +83,14 @@
     <Compile Include="Framework\Base.cs" />
     <Compile Include="Framework\BasePage.cs" />
     <Compile Include="Framework\BaseTest.cs" />
+    <Compile Include="Framework\Browsers.cs" />
     <Compile Include="Framework\DriverContext.cs" />
     <Compile Include="Framework\Logger.cs" />
-    <Compile Include="Framework\ReadConfigurationFile.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StepDefinitions\StepDefinition_HomePageMenus.cs" />
+    <Compile Include="StepDefinitions\Hooks.cs" />
+    <Compile Include="StepDefinitions\HomePageMenus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

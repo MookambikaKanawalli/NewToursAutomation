@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Support.PageObjects;
+﻿using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
 
 namespace NewToursFrameworkAndTest.Framework
 {
-    public class BasePage
+    public class BasePage:Base
     {
         private IWebDriver _driver;
         public BasePage()
@@ -24,6 +19,11 @@ namespace NewToursFrameworkAndTest.Framework
             };
             PageFactory.InitElements(DriverContext.Driver, pageInstance);
             return pageInstance;
-    }
+        }
+
+        public TPage As<TPage>() where TPage: BasePage
+        {
+            return (TPage)this;
+        }
     }
 }

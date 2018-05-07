@@ -8,5 +8,6 @@ namespace NewToursFrameworkAndTest.Framework
 {
     class BaseTest
     {
+
     }
 }
